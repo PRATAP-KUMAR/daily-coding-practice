@@ -3,10 +3,10 @@
 def absSort(arr)
 	for i in 0..arr.length-1 do
 		for j in (i+1)..arr.length-1 do
-			if (arr[j].to_i).abs < (arr[i].to_i).abs
+			if arr[j].abs < arr[i].abs
 				arr[j], arr[i] = arr[i], arr[j]
-			elsif (arr[j].to_i).abs == (arr[i].to_i).abs
-				if arr[j].to_i < arr[i].to_i
+			elsif arr[j].abs == arr[i].abs
+				if arr[j] < arr[i]
 					arr[j], arr[i] = arr[i], arr[j]
 				end
 			end
