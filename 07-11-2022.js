@@ -1,5 +1,3 @@
-#!/usr/bin/gjs
-
 const unique = (array) => {
 	return array.reduce((prev, values) => {
 		if (prev.find((value) => { return value === values })) {
@@ -11,9 +9,7 @@ const unique = (array) => {
 	}, []);
 }
 
-let numbers = [1, 2, 3, 4, 3]
+let numbers = [3, 4, 3, 1, 2]
 let result = unique(numbers)
 
 console.log(result)
-
-			
